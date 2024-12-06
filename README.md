@@ -33,5 +33,6 @@ Sample data is provided in the variable files. Please replace this with informat
 
 ## For more info:
 [infra.aap_configuration collection](https://github.com/redhat-cop/infra.aap_configuration)
+
 [AAP, HUB, EDA complete install and config template](https://github.com/redhat-cop/aap_configuration_template)
 
