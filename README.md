@@ -13,3 +13,11 @@ collections:
   - name: infra.aap_configuration
 ```
 
+## Required variables
+
+```yaml
+---
+aap_config_controller_host: the hostname of your AAP instance
+aap_config_controller_user: username for AAP instance
+aap_config_controller_pass: password for AAP instance
+```
