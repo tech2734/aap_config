@@ -31,7 +31,7 @@ controller_projects:
     description: "{{ controller_default_description }}"
     organization: 'aap_config_org'
     scm_type: 'git'
-    scm_url: 'ssh://git@github.com:tech2734/aap_config.git'
+    scm_url: 'git@github.com:tech2734/aap_config.git'
     scm_branch: 'main'
     scm_clean: yes
     scm_update_on_launch: no
