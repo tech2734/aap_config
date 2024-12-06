@@ -1,7 +1,7 @@
-controller_hostname: "{{ aap_config_controller_host }}"
-controller_username: "{{ aap_config_controller_user }}"
-controller_password: "{{ aap_config_controller_pass }}"
-controller_validate_certs: false
+aap_hostname: "{{ aap_config_controller_host }}"
+aap_username: "{{ aap_config_controller_user }}"
+aap_password: "{{ aap_config_controller_pass }}"
+aap_validate_certs: false
 controller_default_description: "Created by HomeLab Ansible Automation"
 controller_configuration_credentials_secure_logging: false
 controller_configuration_secure_logging: false
