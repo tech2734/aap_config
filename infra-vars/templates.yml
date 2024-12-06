@@ -1,0 +1,67 @@
+---
+## templates vars file
+## options (provided as a reference, see collection documentation for details)
+## - name: required
+##   new_name: this will rename a template
+##   copy_from: this will copy a template and change parameters for new template
+##   organization:
+##   description:
+##   execution_environment:
+##   job_type: default "run"
+##   inventory:
+##   project:
+##   playbook:
+##   credentials: (list of credentials to use)
+##   forks:
+##   limit:
+##   verbosity:
+##   extra_vars:
+##   job_tags:
+##   force_handlers:
+##   skip_tags:
+##   start_at_task:
+##   diff_mode:
+##   use_fact_cache:
+##   host_config_key:
+##   ask_{scm_branch,diff_mode,variables,limit,tags,skip_tags,job_type,verbosity,inventory,credential,execution_environment, \
+##   forks,instance_groups,job_slice_count,labels,timeout}_on_launch: default "no"
+##   prevent_instance_group_fallback:
+##   survey_enabled:
+##   survey_spec:
+##   survey:
+##   become_enabled: default "no"
+##   allow_simultaneous:
+##   timeout:
+##   instance_groups:
+##   job_slice_count: (do not use on tower)
+##   webhook_service: (github, gitlab)
+##   webhook_credential:
+##   scm_branch:
+##   labels:
+##   custom_virtualenv:
+##   notification_templates_{started,success,error}:
+##   state: default "present"
+
+controller_templates:
+  - name: 'aap_config_hello_world'
+    description: "{{ controller_default_description }}"
+    organization: 'aap_config_org'
+    inventory: 'aap_config_linux_inventory'
+    project: 'aap_config_project'
+    playbook: 'hello-world.yml'
+  - name: 'aap_config_aap_infra'
+    description: "{{ controller_default_description }}"
+    organization: 'aap_config_org'
+    inventory: 'aap_config_inventory'
+    project: 'aap_config_project'
+    playbook: 'aap_config.yml'
+    credentials:
+      - 'aap_config_vault_cred'
+  - name: 'aap_config_hello_world_windows'
+    description: "{{ controller_default_description }}"
+    organization: 'aap_config_org'
+    inventory: 'aap_config_win_inventory'
+    project: 'aap_config_project'
+    playbook: 'hello-world-win.yml'
+    credentials:
+      - 'aap_config_win_cred'

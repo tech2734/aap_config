@@ -1,0 +1,12 @@
+---
+## execution environments vars files
+## options (provided as a reference, see collection documentation for details)
+## - name: required
+##   organization:
+##   description:
+##   image: required
+##   credential:
+##   pull: default "missing"
+##   state: default "present"
+
+controller_execution_environments: []

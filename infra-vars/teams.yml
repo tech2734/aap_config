@@ -1,0 +1,9 @@
+---
+## teams vars files
+## options (provided as a reference, see collection documentation for details)
+## - name: required
+##   new_name:
+##   description:
+##   organization:
+##   state: default "present"
+controller_teams: []

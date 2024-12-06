@@ -1,0 +1,36 @@
+---
+## inventory sources vars file
+## options (provided as a reference, see collection documentation for details)
+## - name: required
+##   new_name: if renaming this asset
+##   description:
+##   organization:
+##   inventory: required
+##   source:
+##   source_path:
+##   source_vars:
+##   enabled_var:
+##   enabled_value:
+##   host_filter:
+##   credential:
+##   execution_environment:
+##   overwrite:
+##   overwrite_vars:
+##   custom_virtualenv:
+##   timeout:
+##   verbosity:
+##   update_on_launch:
+##   update_cache_timeout:
+##   source_project: 
+##   notification_templates_{started,success,error}: i.e. notification_templates_error
+##   state: default "present"
+
+controller_inventory_sources:
+  - name: 'aap_config_inventory_source'
+    source: scm
+    source_path: 'inventory/hosts.yml'
+    overwrite: yes
+    overwrite_vars: yes
+    source_project: 'aap_config_project'
+    inventory: 'aap_config_inventory'
+    description: "{{ controller_default_description }}"

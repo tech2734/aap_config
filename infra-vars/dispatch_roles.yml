@@ -1,0 +1,16 @@
+---
+## this var will tell the configuration_controller collection's dispatch role which roles we want to run
+dispatch_roles:
+  - {role: settings, var: controller_settings, tags: settings}
+  - {role: organizations, var: controller_organizations_nocreds, tags: organizations_nocreds}
+  - {role: credentials, var: controller_credentials, tags: credentials}
+  - {role: organizations, var: controller_organizations, tags: organizations}
+  - {role: projects, var: controller_projects, tags: projects}
+  - {role: inventories, var: controller_inventories, tags: inventories}
+  - {role: inventory_sources, var: controller_inventory_sources, tags: inventory_sources}
+  - {role: users, var: controller_user_accounts, tags: users}
+  - {role: teams, var: controller_teams, tags: teams}
+  - {role: job_templates, var: controller_templates, tags: job_templates}
+  - {role: hosts, var: controller_hosts, tags: hosts}
+  - {role: groups, var: controller_groups, tags: inventories}
+  - {role: roles, var: controller_roles, tags: roles}

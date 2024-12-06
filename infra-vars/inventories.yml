@@ -1,0 +1,27 @@
+---
+## inventories vars file
+## options (provided as a reference, see collection documentation for details)
+## - name: required
+##   organization:
+##   description:
+##   instance_groups:
+##   variables:
+##   kind:
+##   host_filter:
+##   prevent_instance_fallback:
+##   state: default "present"
+
+controller_inventories:
+  - name: 'aap_config_inventory'
+    description: "{{ controller_default_description }}"
+    organization: 'aap_config_org'
+  - name: 'aap_config_linux_inventory'
+    description: "{{ controller_default_description }}"
+    organization: 'aap_config_org'
+  - name: 'aap_config_win_inventory'
+    description: "{{ controller_default_description }}"
+    organization: 'aap_config_org'
+    variables:
+      ansible_connection: 'winrm'
+      ansible_winrm_transport: 'ntlm'
+      ansible_winrm_server_cert_validation: 'ignore'

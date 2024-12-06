@@ -1,0 +1,5 @@
+---
+# requirements.yml
+collections:
+  - ansible.controller
+  - infra.aap_configuration

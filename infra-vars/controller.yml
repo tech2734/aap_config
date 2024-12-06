@@ -1,3 +1,38 @@
-controller_hostname: "{{ homelab_controller_host }}"
-controller_username: "{{ homelab_controller_user }}"
-controller_password: "{{ homelab_controller_pass }}"
+controller_hostname: "{{ aap_config_controller_host }}"
+controller_username: "{{ aap_config_controller_user }}"
+controller_password: "{{ aap_config_controller_pass }}"
+controller_validate_certs: false
+controller_default_description: "Created by HomeLab Ansible Automation"
+controller_configuration_credentials_secure_logging: false
+controller_configuration_secure_logging: false
+controller_galaxy_credentials:
+  - 'aaphub_published_cred'
+  - 'aaphub_rh_certified_cred'
+  - 'aaphub_validated_cred'
+  - 'aaphub_community_cred'
+controller_launch_jobs: []
+controller_configuration_projects_async_delay: 10
+controller_configuration_projects_async_retries: 30
+aap_config_win_cred_pass: !vault |
+          $ANSIBLE_VAULT;1.1;AES256
+          61343462363566663036363831616332356635346430643639623764613939646133656238333465
+          3962633030613037363965303063313937316633653134320a366664353030613039376362333561
+          30373737643834633463366566383439303134336333366139623539643761353732333763653830
+          3833346165376137350a393130633738373261343333353933613130306438663833666133663766
+          3666
+aap_config_rhel_cred_pass: !vault |
+          $ANSIBLE_VAULT;1.1;AES256
+          33636464363866633236623065633733343831643961633066373334646661303563333338623536
+          6164643038303462323766656533616566373331306362360a653766373038336466643235346236
+          34313730326464383438656233356363333962316334616134363631383166653433363037643733
+          3534336166356261630a383038366437303636343932653665386334626363373962623136316539
+          6365
+aap_config_vault_password: !vault |
+          $ANSIBLE_VAULT;1.1;AES256
+          39343664393337646130646137366333613430656365396335393065373334636232386535363537
+          3363393361316161636233383565343466303662366630300a613737366132323435333161346136
+          65333337663066383064333437633135383739646434383535306337323634393133303062303135
+          3366386431363739380a633039313837383030306366653437393362646662613365653734323732
+          3839
+aap_config_aaphub_host: ""
+aap_config_aaphub_token: ""

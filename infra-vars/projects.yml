@@ -1,0 +1,39 @@
+---
+## projects vars files
+## options (provided as a reference, see collection documentation for details)
+## - name: required
+##   organization: required
+##   description:
+##   scm_type:
+##   scm_url:
+##   default_environment:
+##   local_path:
+##   scm_branch:
+##   scm_refspec:
+##   credential:
+##   signature_validation_credential:
+##   scm_clean:
+##   scm_delete_on_update:
+##   scm_track_submodules:
+##   scm_update_on_launch:
+##   scm_update_cache_timeout:
+##   allow_override:
+##   timeout:
+##   custom_virtualenv:
+##   notification_templates_{started,success,error}: i.e. notification_templates_error
+##   state: default "present"
+##   wait:
+##   update_project:
+##   interval:
+
+controller_projects:
+  - name: 'aap_config_project'
+    description: "{{ controller_default_description }}"
+    organization: 'aap_config_org'
+    scm_type: 'git'
+    scm_url: 'ssh:git@github.com:tech2734/aap_config.git'
+    scm_branch: 'main'
+    scm_clean: yes
+    scm_update_on_launch: no
+    credential: 'aap_config_git_cred'
+    

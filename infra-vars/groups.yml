@@ -1,0 +1,13 @@
+---
+## groups vars file
+## options (provided as a reference, see collection documentation for details)
+## - name: required
+##   new_name: this will rename a group
+##   description:
+##   inventory:
+##   variables:
+##   hosts:
+##   children: for nested groups
+##   state: default "present"
+
+controller_groups: []

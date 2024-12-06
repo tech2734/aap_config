@@ -1,0 +1,10 @@
+---
+- hosts: all
+  gather_facts: false
+  tasks:
+    - name: 'Hello World Message'
+      ansible.builtin.debug:
+        msg: "Hello from {{ inventory_hostname }}"
+
+    - name: 'Ping test'
+      win_ping:
