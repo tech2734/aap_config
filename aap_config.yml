@@ -18,4 +18,4 @@
 
     - name: Call dispatch role
       ansible.builtin.include_role:
-        name: infra.controller_configuration.dispatch
+        name: infra.aap_configuration.dispatch

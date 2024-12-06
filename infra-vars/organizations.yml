@@ -1,5 +1,5 @@
 ---
 ## organizations file
-controller_organizations:
+aap_organizations:
   - name: aap_config_org
     description: "{{ controller_default_description }}"

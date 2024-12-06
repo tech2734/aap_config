@@ -3,3 +3,4 @@
 collections:
   - ansible.controller
   - infra.aap_configuration
+  - ansible.platform
