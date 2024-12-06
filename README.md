@@ -29,5 +29,6 @@ aap_config_controller_pass: # The password for the AAP instance
 Sample data is provided in the variable files. Please replace this with information relevant to your setup.
 
 ## Job Output
-![image](https://github.com/user-attachments/assets/3c72fb0f-bb8a-4fa2-996f-5d89bed0f2a6)
+![image](https://github.com/user-attachments/assets/42136f5e-0c91-463d-9c53-e8fa6bdbd74d)
+
 
