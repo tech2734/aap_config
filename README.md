@@ -10,4 +10,6 @@ The following collections are required
 ---
 collections:
   - name: ansible.controller
-  - name: infra.aap_configuration 
+  - name: infra.aap_configuration
+```
+

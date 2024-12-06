@@ -1,0 +1,3 @@
+controller_hostname: "{{ homelab_controller_host }}"
+controller_username: "{{ homelab_controller_user }}"
+controller_password: "{{ homelab_controller_pass }}"
