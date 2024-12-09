@@ -2,16 +2,10 @@
 ## this var will tell the configuration_controller collection's dispatch role which roles we want to run
 aap_configuration_dispatcher_roles: "{{ controller_configuration_dispatcher_roles }}"
 controller_configuration_dispatcher_roles:
-  - {role: controller_settings, var: controller_settings, tags: settings}
-  - {role: controller_organizations, var: aap_organizations, tags: organizations, assign_galaxy_credentials_to_org: false}
   - {role: controller_credentials, var: controller_credentials, tags: credentials}
-  - {role: controller_organizations, var: aap_organizations, tags: organizations}
   - {role: controller_projects, var: controller_projects, tags: projects}
   - {role: controller_inventories, var: controller_inventories, tags: inventories}
   - {role: controller_inventory_sources, var: controller_inventory_sources, tags: inventory_sources}
-  - {role: controller_users, var: controller_user_accounts, tags: users}
-  - {role: controller_teams, var: controller_teams, tags: teams}
   - {role: controller_job_templates, var: controller_templates, tags: job_templates}
   - {role: controller_hosts, var: controller_hosts, tags: hosts}
   - {role: controller_host_groups, var: controller_groups, tags: inventories}
-  - {role: controller_roles, var: controller_roles, tags: roles}
