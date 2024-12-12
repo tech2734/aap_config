@@ -6,6 +6,9 @@
   vars:
     controller_configs_dir: './infra-vars'
     controller_validate_certs: false
+  module_defaults:
+    project:
+      scm_type: git
 
   tasks:
     - name: Include vars from configs directory
